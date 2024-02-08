@@ -1,4 +1,4 @@
-# hound_hardware
+# Repository that contains hardware files associated to the HOUND project.
 ##### Note: If you already have a [MuSHR](https://mushr.io/), you will be re-using a fair number of the components, so only order the highlighted components from the BOM, as they represent the "diff". Additionally, you may want to order the d455 if you don't have one and want to use that.
 
 ## [Bill of materials](https://docs.google.com/spreadsheets/d/12jod9aALWGB2n3a47guYzTRTLul8M2QtT9iCGtkBhws/edit?usp=sharing)
