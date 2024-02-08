@@ -24,7 +24,7 @@ The build steps are divided into 2 parts:
 5. Follow this guide to load the board parameters using [QGC](https://github.com/sidtalia/HOUND_hardware/tree/main/ardupilot_files/firmwares/mroPixracerPro) or [MP](https://ardupilot.org/planner/docs/mission-planner-configuration-and-tuning.html#full-parameter-list) onto the MRo Pixracer pro.
 
 ### Setting up the Hardware:
-#### Setting up the base
+#### Setting up the base (These steps are a WIP and will be updated as we have people in our lab build more of these platforms while trying to follow these instructions). 
 We re-use some of the build steps for the MuSHR to set up the low-level platform. Follow the instructions [here](https://mushr.io/hardware/build_instructions/#servo-motor-removal) for the following components:
 1. [VESC Preparation](https://mushr.io/hardware/build_instructions/#vesc-preparation): Follow the steps up to step "20", where the VESC firmware is uploaded. 
     - Instead of uploading the servo output bin file, use the [default firmware](https://github.com/vedderb/bldc-tool/blob/master/firmwares/hw_410_411_412/VESC_default.bin).
