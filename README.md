@@ -5,7 +5,7 @@
 
 ## Build steps:
 The build steps are divided into 2 parts:
-1. Setting up the Jetson Orin NX -- flashing Jetpack and installing bare essentials
+1. Setting up the computers -- flashing Jetpack and the ardupilot board
 2. Setting up the HOUND hardware
 
 ### Setting up the Jetson Orin NX:
@@ -19,6 +19,9 @@ The build steps are divided into 2 parts:
     sudo pip install jetson-stats
     sudo reboot now
     ```
+3. For Ubuntu, download QGroundcontrol(QGC), for Windows (preferred), download MissionPlanner(MP).
+4. Follow these instructions for [QGC](https://docs.qgroundcontrol.com/Stable_V4.3/en/qgc-user-guide/setup_view/firmware.html) and these for [MP](https://ardupilot.org/planner/docs/common-loading-firmware-onto-pixhawk.html) to flash the [custom firmware].
+5. Follow this guide to load the board parameters using [QGC](https://github.com/sidtalia/HOUND_hardware/tree/main/ardupilot_files/firmwares/mroPixracerPro) or [MP](https://ardupilot.org/planner/docs/mission-planner-configuration-and-tuning.html#full-parameter-list) onto the MRo Pixracer pro.
 
 ### Setting up the Hardware:
 #### Setting up the base
