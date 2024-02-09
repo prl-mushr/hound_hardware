@@ -20,7 +20,7 @@ The build steps are divided into 2 parts:
     sudo reboot now
     ```
 3. For Ubuntu, download QGroundcontrol(QGC), for Windows (preferred), download MissionPlanner(MP).
-4. Follow these instructions for [QGC](https://docs.qgroundcontrol.com/Stable_V4.3/en/qgc-user-guide/setup_view/firmware.html) and these for [MP](https://ardupilot.org/planner/docs/common-loading-firmware-onto-pixhawk.html) to flash the [custom firmware].
+4. Follow these instructions for [QGC](https://docs.qgroundcontrol.com/Stable_V4.3/en/qgc-user-guide/setup_view/firmware.html) and these for [MP](https://ardupilot.org/planner/docs/common-loading-firmware-onto-pixhawk.html) to flash the [custom firmware](https://github.com/prl-mushr/hound_hardware/tree/main/ardupilot_files/firmwares/mroPixracerPro) on to the MRo PixRacer Pro.
 5. Follow this guide to load the board parameters using [QGC](https://github.com/sidtalia/HOUND_hardware/tree/main/ardupilot_files/firmwares/mroPixracerPro) or [MP](https://ardupilot.org/planner/docs/mission-planner-configuration-and-tuning.html#full-parameter-list) onto the MRo Pixracer pro.
 
 ### Setting up the Hardware:
