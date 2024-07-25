@@ -80,11 +80,11 @@ We re-use some of the build steps for the MuSHR to set up the low-level platform
 </p>
 
 6. Mount the Mro Pixracer Pro as shown
+Images for reference:
+![](content/pixracer_front.png)
 <p align="center">
 <img width="641" alt="image" src="https://github.com/sidtalia/HOUND_hardware/assets/24889667/b9c3df4c-744c-455d-815d-5d38832666c4">
 </p>
-Images for reference:
-![](content/pixracer_front.png)
 
 7. Mount the D455 to the front cover as shown using the M4x8 screws
 <p align="center">
@@ -111,12 +111,12 @@ Images for reference:
 <img width="635" alt="image" src="https://github.com/sidtalia/HOUND_hardware/assets/24889667/d4cb0a36-d078-4046-97d2-96c5b1dcfae3">
 </p>
 
-13. Mount the GPS to the GPS cover and put Aluminum tape under it:
+13. Mount the GPS to the GPS cover and put Aluminum tape under it: 
+Image for reference:
+![](content/gps_foil.jpg)
 <p align="center">
 <img width="681" alt="image" src="https://github.com/sidtalia/HOUND_hardware/assets/24889667/021f5577-0e71-4ab4-82b0-bb0e9749e095">
 </p>
-Image for reference:
-![](content/gps_foil.jpg)
 
 14. We use the latches and pins to attach the rear cover and the GPS cover as shown. There are latch holders on the mid-section as well. (**TODO: this step needs more sub-steps with images as it is not obvious how to attach the spring in the latch to the pin.**)
 <p align="center">
@@ -130,6 +130,6 @@ Image for reference:
 
 16. Connect the USB cables for all the devices as shown in the following images:
 ![](content/jetson_usb.png)
-![](content/jetson_connected.jpg)
+![](content/photo_connected.jpg)
 
 
