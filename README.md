@@ -29,6 +29,9 @@ We re-use some of the build steps for the MuSHR to set up the low-level platform
 1. [VESC Preparation](https://mushr.io/hardware/build_instructions/#vesc-preparation): Follow the steps up to step "20", where the VESC firmware is uploaded. 
     - Instead of uploading the servo output bin file, use the [default firmware](https://github.com/prl-mushr/hound_hardware/blob/main/VESC_files/firmwares/hw_410_411_412/VESC_default.bin).
     - Instead of soldering the banana connectors, you will be soldering the IC3 connectors instead, and you will be soldering the leads from the two Matek buck converters into the same IC3 connectors, such that the VESC and the Matek buck converters are all able to get power from the same IC3 connectors. Use the color of the wire to infer polarity, red for positive, black for negative.
+    Pictures for reference (make sure to strip the wire down to 14-16 gauge):
+    ![](content/wire_gauge.jpg)
+    ![](content/IC3_connector.jpg)
     - Using the [BLDC tool](https://github.com/vedderb/bldc-tool/tree/master) (git clone, build), upload the [hound_vesc.xml](https://github.com/prl-mushr/hound_hardware/blob/main/VESC_files/parameters/hound_vesc.xml) parameter file.
     - You may have to set up the PPM input. For this, in the bldc-tool, go to the app configuration --> PPM and set the values as shown in the image.
     - ![image](https://github.com/prl-mushr/hound_hardware/assets/24889667/b14e39ea-3858-4305-a3f1-886efe387efb)
@@ -62,22 +65,26 @@ We re-use some of the build steps for the MuSHR to set up the low-level platform
 <img width="629" alt="image" src="https://github.com/sidtalia/HOUND_hardware/assets/24889667/17885beb-6372-4b7d-b536-87377eba3e2c">
 </p>
 
-4. Wiring (**TODO: attach image to show wiring for reference**):
+4. Wiring:
     - Connect the other buck converter's output to the R/C receiver.
     - Using the mro pixracer pro [pinout](https://docs.mrobotics.io/autopilots/pixracer-pro.html#pinout) for reference:
       - Connect one of the Matek buck converter's 5V output to the Power rail on the MRo Pixracer pro's power rail.
       - The Power rail has Ground at the bottom, 5 V in the middle, and the signal on top.
       - Connect the steering servo wire to channel 4, and VESC wire to channel 3. Remove/cut the VESC wire's 5V line before connecting. You will likely need to use an extension wire for the servo (also included in the BOM)
+![](content/pixracer_back.png)
+
 
 5. Mount the Mid-level on the rear base using the M3x30 standoffs
 <p align="center">
 <img width="664" alt="image" src="https://github.com/sidtalia/HOUND_hardware/assets/24889667/bf9d6b24-8c6a-4359-86c8-d3f92535ff4c">
 </p>
 
-6. Mount the Mro Pixracer Pro as shown (**TODO: attach image to show wiring for reference**)
+6. Mount the Mro Pixracer Pro as shown
 <p align="center">
 <img width="641" alt="image" src="https://github.com/sidtalia/HOUND_hardware/assets/24889667/b9c3df4c-744c-455d-815d-5d38832666c4">
 </p>
+Images for reference:
+![](content/pixracer_front.png)
 
 7. Mount the D455 to the front cover as shown using the M4x8 screws
 <p align="center">
@@ -104,10 +111,12 @@ We re-use some of the build steps for the MuSHR to set up the low-level platform
 <img width="635" alt="image" src="https://github.com/sidtalia/HOUND_hardware/assets/24889667/d4cb0a36-d078-4046-97d2-96c5b1dcfae3">
 </p>
 
-13. Mount the GPS to the GPS cover and put Aluminum tape under it (**TODO: attach image for reference**)
+13. Mount the GPS to the GPS cover and put Aluminum tape under it:
 <p align="center">
 <img width="681" alt="image" src="https://github.com/sidtalia/HOUND_hardware/assets/24889667/021f5577-0e71-4ab4-82b0-bb0e9749e095">
 </p>
+Image for reference:
+![](content/gps_foil.jpg)
 
 14. We use the latches and pins to attach the rear cover and the GPS cover as shown. There are latch holders on the mid-section as well. (**TODO: this step needs more sub-steps with images as it is not obvious how to attach the spring in the latch to the pin.**)
 <p align="center">
@@ -118,5 +127,9 @@ We re-use some of the build steps for the MuSHR to set up the low-level platform
 <p align="center">
 <img width="532" alt="image" src="https://github.com/sidtalia/HOUND_hardware/assets/24889667/1e94ea48-deb5-490e-8505-451b74ef0224">
 </p>
+
+16. Connect the USB cables for all the devices as shown in the following images:
+![](content/jetson_usb.png)
+![](content/jetson_connected.jpg)
 
 
