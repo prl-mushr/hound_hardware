@@ -61,6 +61,8 @@ We re-use some of the build steps for the MuSHR to set up the low-level platform
   <img width="624" alt="image" src="https://github.com/sidtalia/HOUND_hardware/assets/24889667/b62769a2-418f-45c4-8b34-b67db4796601">
 </p>
 3. Mount the VESC, exhaust fan on the rear base, and place the buck converters and R/C receiver using double sided tape as shown. Pass the motor cables through the whole marked on the right. Use the same hole to pass in the servo wires from underneath. Connect the VESC's USB wire, which will be attached to the Jetson later.
+
+#### Note: the VESC is mounted using 10 mm standoffs. The USB port of the VESC should be facing towards the buck converters. When mounted in this pose, the capacitor bank should automatically swing away from the standoffs of the VESC. If you mount it such that the VESC is on 20 mm standoffs and the USB port is facing the jetson, the capacitor bank terminals can short against the standoffs. This alternate orientation requires use of plastic standoffs or additional insulation around the capacitor bank (hot glue works).
 <p align="center">
 <img width="629" alt="image" src="https://github.com/sidtalia/HOUND_hardware/assets/24889667/17885beb-6372-4b7d-b536-87377eba3e2c">
 </p>
